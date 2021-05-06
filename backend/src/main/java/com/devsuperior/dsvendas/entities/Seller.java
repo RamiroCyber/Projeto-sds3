@@ -19,7 +19,7 @@ public class Seller {
 	private Long id;
 	private String name;
 
-	@OneToMany(mappedBy = "saller")
+	@OneToMany(mappedBy = "seller")
 	private List<Sale> sales = new ArrayList<>();
 
 	public Seller() {
@@ -46,7 +46,7 @@ public class Seller {
 		this.name = name;
 	}
 
-	public List<Sale> getSales() {
+	public List<Sale> getSeles() {
 		return sales;
 	}
 
